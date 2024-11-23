@@ -1,0 +1,147 @@
+/* Mobile (Portrait): max-width: 480px
+Mobile (Landscape): max-width: 767px
+Tablet: max-width: 1024px
+Desktop: min-width: 1025px */
+
+@media (max-width: 990px) {
+  .navlink {
+    display: none;
+  }
+  .nav {
+    margin: 0 50px;
+  }
+  .hamb {
+    display: block;
+    margin: 16px;
+    font-size: larger;
+  }
+  .stk {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+  }
+  .hero {
+    margin: 0 50px;
+  }
+  .heroLeft img {
+    margin-top: 100px;
+  }
+  .service {
+    margin: 10px 50px;
+  }
+  .cards {
+    gap: 10px;
+  }
+  .exptime::after {
+    content: ".";
+    background-color: rgb(255, 255, 255);
+    /* width: 10px; */
+    padding: 0.2px 6px;
+    color: aliceblue;
+    border-radius: 50%;
+    position: relative;
+    left: 124px;
+    top: -75px;
+    cursor: pointer;
+    border: 5px solid blue;
+    z-index: 10;
+  }
+  .exps::before {
+    content: " ";
+    position: relative;
+    background-color: rgb(188, 188, 188);
+    padding: 60px 2px;
+    left: -11px;
+    top: 65px;
+  }
+  .grid-container{
+    padding: 20px 100px;
+  }
+  .clientCard .card1{
+    width: 50%;
+  }
+  .blog1{
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 40px;
+    border-radius: 50%;
+  }
+  .nav {
+    margin: 0 10px;
+  }
+  .hero {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .heroLeft,
+  .heroRight {
+    width: 100%;
+  }
+  .heroLeft img {
+    margin-top: 100px;
+  }
+  .service {
+    margin: 5px 10px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .exptime::after {
+    display: none;
+  }
+  .exps::before {
+    display: none;
+  }
+
+  .exp {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .exps {
+    width: 100%;
+  }
+  .exptime {
+    width: 100%;
+  }
+  .grid-container{
+    grid-template-columns:1fr;
+    padding: 20px 20px;
+  }
+  .clientCard{
+    flex-direction: column;
+  }
+  .clientCard .card1{
+    width: 100%;
+  }
+  .clientCard .card2{
+    display: none;
+  }
+  .blogs{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .blog1{
+    width: 100%;
+  }
+  .nm ,.em  {
+    width: 400px;
+    
+  }
+  .tx textarea{
+    width: 400px;
+  }
+  .detail{
+    margin: 15px 20px;
+ 
+  flex-direction: column;
+  }
+
+}
